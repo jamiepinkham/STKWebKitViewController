@@ -103,7 +103,7 @@
     
     [self.view setNeedsUpdateConstraints];
     self.toolbarWasHidden = self.navigationController.isToolbarHidden;
-    [self.navigationController setToolbarHidden:NO animated:YES];
+    [self.navigationController setToolbarHidden:!self.hidesBottomBarWhenPushed animated:YES];
     [self fillToolbar];
     
     self.savedNavigationbarTintColor = self.navigationController.navigationBar.barTintColor;
